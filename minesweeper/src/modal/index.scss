@@ -1,0 +1,21 @@
+.modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  padding: 20px 50px 50px;
+
+  background: var(--main-bg-color);
+  border: 5px solid var(--main-color-dark);
+  border-radius: 20px;
+}
+
+.modal_visible {
+  display: block;
+}
+
+.modal__title {
+  text-align: center;
+}
