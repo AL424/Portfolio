@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player" value="player">
+      <div class="play-wrap">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="play-title"></div>
+        <div>
+          <time class="play-time">0:00</time>
+          <span>/</span>
+          <time class="play-duration">0:00</time>
+        </div>
+      </div>
+      <div class="play-wrap">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="volume-wrap">
+          <button class="volume-icon player-icon"></button>
+          <div class="volume-bar">
+            <div class="volume"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather" value="weather">
+      <input type="text" class="city" placeholder="enter the city">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time" value="clock"></time>
+    <date class="date" value="date"></date>
+    <div class="greeting-container" value="greeting">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="dear friend">
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="setting-icon"></button>
+    <table class="setting">
+      <tr><th class="setting__title">Languages</th><td>
+        <form action="#">
+          <label class="lang-label"><input type="radio" name="lang" class="lang" value="en"><span>En</span></label>
+          <label class="lang-label"><input type="radio" name="lang" class="lang" value="ru"><span>Ru</span></label>
+        </form>
+      </td></tr>
+      <tr><th class="setting__title">Photo source</th><td>
+        <form action="#" class="photo-wrap">
+          <label class="photo-label"><input type="radio" name="img-source" class="photo-source" value="github"><span>GitHub</span></label><br>
+          <label class="photo-label"><input type="radio" name="img-source" class="photo-source" value="unsplash"><span>Unsplash</span></label><br>
+          <label class="photo-label"><input type="radio" name="img-source" class="photo-source" value="flickr"><span>Flickr</span></label>
+        </form>
+      </td></tr>
+      <tr><th class="setting__title">Photo tags</th><td class="tags-wrap">
+        <div class="tag-wrap">
+          <input type="text" placeholder="Enter tag..." class="tag-input"><span class="tag-input-seach"></span>
+        </div>
+      <div class="img-tags"></div>
+      </td></tr>
+      <tr><th class="setting__title">Blocks</th><td>
+        <form action="#" class="blocks-wrap">
+          <label><input type="checkbox" name="blocks" class="block-input" value="clock"><span class="block-name">Clock</span></label>
+          <label><input type="checkbox" name="blocks" class="block-input" value="date"><span class="block-name">Date</span></label>
+          <label><input type="checkbox" name="blocks" class="block-input" value="greeting"><span class="block-name">Greeting</span></label>
+          <label><input type="checkbox" name="blocks" class="block-input" value="quotes"><span class="block-name">Quotes</span></label>
+          <label><input type="checkbox" name="blocks" class="block-input" value="weather"><span class="block-name">Weather</span></label>
+          <label><input type="checkbox" name="blocks" class="block-input" value="player"><span class="block-name">Audio player</span></label>
+          <label><input type="checkbox" name="blocks" class="block-input" value="to-do"><span class="block-name">To-do</span></label>
+        </form>
+      </td></tr>
+    </table>
+    <div class="quotes" value="quotes">
+      <button class="change-quote"></button>
+      <div class="quote-wrap">
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="to-do" value="to-do">
+      <div class="to-do__icon">TO-DO</div>
+      <div class="to-do__list-wrap">
+        <span class="to-do__empty">Your to-do list is empty. Add first task...</span>
+        <ul class="to-do__list">
+        </ul>
+        <input type="text" placeholder="add a task..." class="to-do__input"><span class="to-do__add"></span>
+      </div>
+    </div>
+    <div class="link-wrap">
+      <a href="./README.md" class="link" target="_blank">Readme</a>
+      <span class="year">2023</span>
+      <a href="https://github.com/AL424" class="link" target="_blank">Github</a>
+      <a href="https://rs.school/js/" class="link" target="_blank">RSSchool</a>
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+  <script src="js/time-date-greeting.js"></script>
+  <script src="js/bg-img.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/playlist.js"></script>
+  <script src="js/audioplayer.js"></script>
+  <script src="js/to-do.js"></script>
+  <script src="js/setting.js"></script>
+</body>
+</html>
