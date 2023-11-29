@@ -1,0 +1,44 @@
+/*    logo    */
+.logo__title {
+  color: #545454;
+}
+.logo__subtitle {
+  color: #292929;
+}
+/*    menu    */
+.menu__item {
+  color: #545454;
+}
+.menu__item:hover {
+  color: #292929;
+}
+.menu__item_active {
+  color: #292929;
+  border-bottom: 3px solid #F1CDB3;
+  pointer-events: none;
+}
+
+/*    our pets    */
+.our-pets {
+  background: #F6F6F6;
+}
+
+.our-pets-title {
+  max-width: 400px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 40px;
+  margin-bottom: 60px;
+}
+
+.cards-btn-wrap {
+  display: flex;
+  column-gap: 20px;
+  width: max-content;
+  margin: 0 auto;
+}
