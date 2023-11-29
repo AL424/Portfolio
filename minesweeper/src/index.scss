@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --main-color: #6e21d2;
+  --main-color-cell: #6e21d2;
+  --main-color-dark: #792790;
+  --main-bg-color: #f2eef9;
+}
+
+html[data-theme="dark"] {
+  --main-color: #c799d1;
+  --main-color-cell: #833f92;
+  --main-color-dark: #792790;
+  --main-bg-color: #5a0b5c;
+}
+
+body {
+  padding: 5px 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--main-color);
+  background: var(--main-bg-color);
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: block;
+  padding: 5px 20px;
+  width: max-content;
+  background: none;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  color: var(--main-color);
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--main-color);
+    color: #ffffff;
+  }
+
+  &:active {
+    background: var(--main-color-dark);
+    border-color: var(--main-color-dark);
+    color: #ffffff;
+  }
+}
+
+.not-click {
+  pointer-events: none;
+}
+
+
+

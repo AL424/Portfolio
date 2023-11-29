@@ -1,0 +1,91 @@
+.game-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.counter-wrap {
+  width: 80%;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.cells {
+  display: grid;
+  gap: 2px;
+}
+
+.cells_small {
+  grid-template-columns: repeat(10, 45px);
+  grid-template-rows: repeat(10, 45px);
+
+  .cell {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+.cells_medium {
+  grid-template-columns: repeat(15, 30px);
+  grid-template-rows: repeat(15, 30px);
+
+  .cell {
+    line-height: 25px;
+    font-size: 16px;
+  }
+}
+
+.cells_hard {
+  grid-template-columns: repeat(25, 22px);
+  grid-template-rows: repeat(25, 22px);
+
+  .cell {
+    border-width: 1px;
+    border-color: var(--main-color-cell);
+    line-height: 20px;
+    font-size: 15px;
+
+    @media screen and (max-width: 900px) and (min-width: 765px), (max-width: 640px) {
+      line-height: 18px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 590px) {
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 900px) and (min-width: 765px), (max-width: 640px) {
+    grid-template-columns: repeat(25, 20px);
+    grid-template-rows: repeat(25, 20px);
+  }
+
+  @media screen and (max-width: 590px) {
+    grid-template-columns: repeat(25, 17px);
+    grid-template-rows: repeat(25, 17px);
+  }
+}
+
+.cell {
+  border: 2px solid var(--main-color);
+  background-color: var(--main-color-cell);
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cell_open {
+  background: none;
+  pointer-events: none;
+}
+
+.cell_bomb {
+  background: rgb(249, 86, 162);
+}
+

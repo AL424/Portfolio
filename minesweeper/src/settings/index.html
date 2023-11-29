@@ -1,0 +1,41 @@
+<div class="settings">
+  <div class="game-settings">
+    <button type="button" class="btn btn-new-game">New game</button>
+    <label>
+      <input type="radio" id="small-game" name="game-size" value="10" checked>
+      10 X 10
+    </label>
+    <label>
+      <input type="radio" id="medium-game" name="game-size" value="15">
+      15 X 15
+    </label>
+    <label>
+      <input type="radio" id="hard-game" name="game-size" value="25">
+      25 X 25
+    </label>
+    <input type="range" min="10" max="99" step="1" value="10" id="input-bombs">
+    <output for="input-bombs" id="output-bombs">10</output>
+  </div>
+  <div class="interface-settings">
+    <div class="mute">
+      <label>
+        <input type="radio" name="mute" value="0" checked>
+        🔈
+      </label>
+      <label>
+        <input type="radio" name="mute" value="1">
+        🔇
+      </label>
+    </div>
+    <div class="theme">
+      <label>
+        <input type="radio" name="theme" value="light" checked>
+        🌞
+      </label>
+      <label>
+        <input type="radio" name="theme" value="dark">
+        🌚
+      </label>
+    </div>
+  </div>
+</div>
