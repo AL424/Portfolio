@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <title>RS CSS</title>
+<script defer src="index.js"></script></head>
+<body class="page">
+  <div class="wrap">
+    <header class="header">
+      <h1 class="title">RS CSS</h1>
+      <div class="level-icon">
+        <span class="line"></span><span class="line"></span><span class="line"></span>
+      </div>
+    </header>
+    <main class="main">
+      <h2 class="description-level" id="description"></h2>
+      <button type="button" id="help-btn" class="help-btn">Help</button>
+      <div class="table-wrap">
+        <div class="subject-title"></div>
+        <div class="table" id="table">
+        </div>
+        <div class="table-edge">
+          <div class="table-leg table-leg_left"></div>
+          <div class="table-leg table-leg_rigth"></div>
+        </div>
+      </div>
+      <div class="editor-wrap">
+        <div class="editor css">
+          <div class="editor__title">
+            <span>CSS Editor</span>
+            <span>style.css</span>
+          </div>
+          <div class="editor__window">
+            <div class="line-numbers">
+              1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15
+            </div>
+            <div class="line-editor">
+              <input type="text" class="selector-input" id="input" placeholder="Type in a CSS selector">
+              <button type="button" class="selector-btn" id="btn">enter</button>
+            </div>
+          </div>
+        </div>
+        <div class="editor html">
+          <div class="editor__title">
+            <span>HTML Viewer</span>
+            <span>table.html</span>
+          </div>
+          <div class="editor__window">
+            <div class="line-numbers">
+              1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15
+            </div>
+            <div class="line-editor" id="code"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://github.com/AL424" class="github-link" target="_blank">My GitHub</a>
+      <span class="year">2023</span>
+      <a href="https://rs.school/js/" class="rsschool-link" target="_blank">RS School</a>
+    </footer>
+  </div>
+  <aside class="levels-wrap">
+    <h2 class="levels__title">Choose a level</h2>
+    <!-- добавление кнопок через js -->
+    <div class="levels" id="levels">
+    </div> 
+    <button type="button" class="reset-btn">Reset progress</button>
+  </aside>
+</body>
+</html>
