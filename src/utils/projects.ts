@@ -20,5 +20,16 @@ export const projects: Project[] = [
       'Двухстраничный сайт приюта для животных, с реализацией всплывающих карточек животных на обеих страницах, бесконечной карусели карточек на главной странице, пагинации на странице our-pets.',
     skills: ['HTML', 'CSS', 'JavaScript'],
     screen: '/screen/shelter.jpg',
-  }
+  },
+  {
+    name: 'Minesweeper',
+    task: 'https://github.com/rolling-scopes-school/tasks/blob/master/tasks/minesweeper/README.md',
+    deploy: 'https://al424.github.io/Portfolio/minesweeper',
+    code: 'https://github.com/AL424/Portfolio/tree/minesweeper/minesweeper',
+    description:
+      'Классическая игра "Cапер" на чистом JavaScript. Реализован функционал классической игры (отображение количества мин, возможность устанавливать флажки и т.п.), выбор уровня сложности (размер поля, количество мин), сохранение результатов игры, выбор темы.',
+    skills: ['HTML', 'SASS', 'JavaScript', 'webpack'],
+    screen: '/screen/minesweeper.png',
+    bgColor: '#f2eef9',
+  },
 ];

@@ -6,5 +6,5 @@ export interface Project {
   description: string;
   skills: string[];
   screen: string;
-  screenMobile?: string;
+  bgColor?: string;
 }

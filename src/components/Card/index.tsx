@@ -1,4 +1,4 @@
-import { FC, createRef, useEffect, useState } from 'react';
+import { CSSProperties, FC, createRef, useEffect, useState } from 'react';
 import { Project } from '../../types/Project';
 import './Card.scss';
 
@@ -6,13 +6,26 @@ export const Card: FC<{ project: Project }> = ({ project }) => {
   const [height, setHeight] = useState<number | undefined>();
   const ref = createRef<HTMLDivElement>();
 
+  const style: CSSProperties | undefined = project.bgColor
+    ? {
+        backgroundColor: project.bgColor,
+        objectPosition: 'top center',
+      }
+    : undefined;
+
   useEffect(() => {
-    setHeight(ref.current?.getBoundingClientRect().height)
+    setHeight(ref.current?.getBoundingClientRect().height);
   }, [ref]);
 
   return (
     <article className="card">
-      <img src={project.screen} alt={project.name} className="card__screen" height={height} />
+      <img
+        src={project.screen}
+        alt={project.name}
+        className="card__screen"
+        height={height}
+        style={style}
+      />
       <div className="card__wrap" ref={ref}>
         <div className="card__info">
           <h3 className="card__title">{project.name}</h3>
