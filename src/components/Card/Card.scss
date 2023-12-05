@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  gap: 30px;
+
+  &__screen {
+    object-fit: cover;
+    object-position: top;
+    width: 60%;
+    flex-grow: 1;
+    border-radius: 15px;
+    border: black solid 3px;
+    box-shadow: 4px 6px black;
+    max-height: 600px;
+  }
+  &__wrap {
+    width: 30%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 450px;
+    height: min-content;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    border: black solid 3px;
+    box-shadow: 4px 6px black;
+    background-color: #F5F6ED;
+    flex-grow: 1;
+    text-align: left;
+  }
+  &__title {
+    padding: 15px 15px 10px;
+    font-size: 2em;
+    line-height: 125%;
+    margin: 0;
+    border-bottom: black solid 3px;
+  }
+  &__description {
+    flex-grow: 1;
+    margin: 15px;
+  }
+  &__task {
+    display: inline-block;
+    margin: 15px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  border-top: black solid 3px;
+
+  .skill__icon {
+    height: 50px;
+  }
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+:root {
+  font-family: 'Open Sans', Inter, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: black;
+  background-color: #FAD074;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Kanit';
+  font-weight: 600;
+}
+
+a {
+  font-family: inherit;
+  font-weight: 500;
+  color: #3300ff;
+}
+
+.btn {
+  display: block;
+  min-width: 150px;
+  padding: 10px 30px;
+  border-radius: 100px;
+  border: black solid 3px;
+  box-shadow: 4px 6px black;
+  background-color: #3300ff;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn_code {
+  background-color: #ff4911;
+}
