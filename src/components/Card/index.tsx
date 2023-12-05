@@ -1,12 +1,19 @@
-import { FC } from 'react';
+import { FC, createRef, useEffect, useState } from 'react';
 import { Project } from '../../types/Project';
 import './Card.scss';
 
 export const Card: FC<{ project: Project }> = ({ project }) => {
+  const [height, setHeight] = useState<number | undefined>();
+  const ref = createRef<HTMLDivElement>();
+
+  useEffect(() => {
+    setHeight(ref.current?.getBoundingClientRect().height)
+  }, [ref]);
+
   return (
     <article className="card">
-      <img src={project.screen} alt={project.name} className="card__screen" />
-      <div className="card__wrap">
+      <img src={project.screen} alt={project.name} className="card__screen" height={height} />
+      <div className="card__wrap" ref={ref}>
         <div className="card__info">
           <h3 className="card__title">{project.name}</h3>
           <p className="card__description">{project.description}</p>
