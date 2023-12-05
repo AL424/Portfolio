@@ -1,21 +1,13 @@
-import { CSSProperties, FC, createRef, useEffect, useState } from 'react';
+import { CSSProperties, FC } from 'react';
 import { Project } from '../../types/Project';
 import './Card.scss';
 
 export const Card: FC<{ project: Project }> = ({ project }) => {
-  const [height, setHeight] = useState<number | undefined>();
-  const ref = createRef<HTMLDivElement>();
-
   const style: CSSProperties | undefined = project.bgColor
     ? {
-        backgroundColor: project.bgColor,
-        objectPosition: 'top center',
+        height: 'min-content',
       }
     : undefined;
-
-  useEffect(() => {
-    setHeight(ref.current?.getBoundingClientRect().height);
-  }, [ref]);
 
   return (
     <article className="card">
@@ -23,10 +15,9 @@ export const Card: FC<{ project: Project }> = ({ project }) => {
         src={project.screen}
         alt={project.name}
         className="card__screen"
-        height={height}
         style={style}
       />
-      <div className="card__wrap" ref={ref}>
+      <div className="card__wrap">
         <div className="card__info">
           <h3 className="card__title">{project.name}</h3>
           <p className="card__description">{project.description}</p>
