@@ -7,5 +7,5 @@ export const Header: FC = () => {
       <h1 className="title">Александр Градович | Портфолио</h1>
       <span className="subtitle">front-end разработчик</span>
     </header>
-  )
-}
+  );
+};
