@@ -5,7 +5,7 @@ import './Card.scss';
 export const Card: FC<{ project: Project }> = ({ project }) => {
   const style: CSSProperties | undefined = project.bgColor
     ? {
-        height: 'min-content',
+        backgroundColor: project.bgColor,
       }
     : undefined;
 
