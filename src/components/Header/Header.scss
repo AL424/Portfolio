@@ -9,19 +9,18 @@
 
   .title,
   .subtitle {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
     text-transform: uppercase;
-    
   }
 
   .title {
     margin-block: 0 0.5rem;
-    text-shadow: 2px 3px #3300ff;
     font-size: 3rem;
+    text-shadow: 1px 2px #facf7480;
   }
   .subtitle {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
     font-size: 2rem;
-    text-shadow: 1px 2px #ff4911;
+    color: #3300ff;
   }
 }
