@@ -1,21 +1,14 @@
-import { CSSProperties, FC } from 'react';
+import { FC } from 'react';
 import { Project } from '../../types/Project';
 import './Card.scss';
 
 export const Card: FC<{ project: Project }> = ({ project }) => {
-  const style: CSSProperties | undefined = project.bgColor
-    ? {
-        backgroundColor: project.bgColor,
-      }
-    : undefined;
-
   return (
     <article className="card">
       <img
         src={project.screen}
         alt={project.name}
         className="card__screen"
-        style={style}
       />
       <div className="card__wrap">
         <div className="card__info">
