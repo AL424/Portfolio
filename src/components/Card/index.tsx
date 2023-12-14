@@ -5,11 +5,7 @@ import './Card.scss';
 export const Card: FC<{ project: Project }> = ({ project }) => {
   return (
     <article className="card">
-      <img
-        src={project.screen}
-        alt={project.name}
-        className="card__screen"
-      />
+      <img src={project.screen} alt={project.name} className="card__screen" />
       <div className="card__wrap">
         <div className="card__info">
           <h3 className="card__title">{project.name}</h3>

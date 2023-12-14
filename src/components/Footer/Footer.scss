@@ -1,0 +1,43 @@
+.footer {
+  padding: 1rem 5rem;
+
+  border-radius: 15px;
+  border: black solid 3px;
+  box-shadow: 4px 6px black;
+  background-color: #F5F6ED;
+
+  position: relative;
+
+  @media (max-width: 650px) {
+    padding-inline: 0.5rem;
+  }
+
+  .gratitude {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 1px 2px #facf7480;
+  }
+
+  .up {
+    all: unset;
+
+    cursor: pointer;
+
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 50px;
+    height: 50px;
+    background-color: #3300ff;
+    box-shadow: 2px 4px black;
+
+    svg {
+      width: 30px;
+      height: 100%;
+      fill: #ffffff;
+    }
+  }
+}
